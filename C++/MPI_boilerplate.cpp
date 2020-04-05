@@ -34,6 +34,18 @@ int main(int argc, char **argv)
    * 
    * * MPI code goes here * *
    * 
+   * Typical commands include: 
+   * 
+   * Send/receive data:
+   * MPI_Send(void* data, int count, MPI_Datatype datatype, int destination, int tag, MPI_Comm communicator)
+   * MPI_Recv(void* data, int count, MPI_Datatype datatype, int source, int tag, MPI_Comm communicator, MPI_Status* status)
+   * 
+   * Reduce data from all processes to one (e.g. global sum when using op = MPI_SUM):
+   * MPI_Reduce(void* send_data, void* recv_data, int count, MPI_Datatype datatype, MPI_Op op, int rootProcID, MPI_Comm communicator)
+   * 
+   * Send data to all processes:
+   * MPI_Bcast(void* data, int count, MPI_Datatype datatype, int rootProcID, MPI_Comm communicator)
+   * 
   */
 
 
