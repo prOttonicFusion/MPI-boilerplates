@@ -1,3 +1,9 @@
+/**
+ * MPI Boilerplate for C++
+ * @Author  : Otto Lindblom
+ * @Link    : https://github.com/prOttonicFusion/MPI-boilerplates
+*/
+
 #include <mpi.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -23,9 +29,13 @@ int main(int argc, char **argv)
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);          // rank = id of current process
   MPI_Get_processor_name(procName, &nameLenght); // procName = name of current process
 
-  /*
-  * * MPI code goes here * *
+
+  /**
+   * 
+   * * MPI code goes here * *
+   * 
   */
+
 
   // Finalize MPI & quit program
   MPI_Finalize();
