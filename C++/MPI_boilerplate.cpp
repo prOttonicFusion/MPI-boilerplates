@@ -13,7 +13,7 @@ using namespace std;
 int main(int argc, char **argv)
 {
   const int tag = 50;
-  int numProc, rank, nameLenght;
+  int numProc, rank, nameLength;
   char procName[MPI_MAX_PROCESSOR_NAME];
   MPI_Status status;
 
@@ -27,7 +27,7 @@ int main(int argc, char **argv)
   // Query process information
   MPI_Comm_size(MPI_COMM_WORLD, &numProc);       // numProc = number of processes/CPUs
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);          // rank = id of current process
-  MPI_Get_processor_name(procName, &nameLenght); // procName = name of current process
+  MPI_Get_processor_name(procName, &nameLength); // procName = name of current process
 
 
   /**
