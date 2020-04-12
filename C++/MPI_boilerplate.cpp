@@ -8,8 +8,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-using namespace std;
-
 int main(int argc, char **argv)
 {
   const int tag = 50;
@@ -20,7 +18,7 @@ int main(int argc, char **argv)
   // Initialize MPI
   if (MPI_Init(&argc, &argv) != MPI_SUCCESS)
   {
-    cout << "MPI initialization failed" << endl;
+    std::cout << "MPI initialization failed" << std::endl;
     return (-1);
   }
 
