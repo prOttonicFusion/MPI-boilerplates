@@ -8,7 +8,7 @@ Compilation:
 mpicxx MPI_boilerplate.cpp -o MPI_program
 ```
 
-Running (on 4 processors):
+Execution (on 4 processors):
 ```
 mpiexec -n 4 MPI_program
 ```
@@ -16,7 +16,7 @@ mpiexec -n 4 MPI_program
 
 ## Python
 
-Running (on 4 processors): 
+Execution (on 4 processors): 
 ```
 mpiexec -n 4 python MPI_boilerplate.py
 ```
@@ -29,7 +29,7 @@ Compilation:
 mpifort MPI_boilerplate.f90 -o MPI_program
 ```
 
-Running (on 4 processors):
+Execution (on 4 processors):
 ```
 mpiexec -n 4 MPI_program
 ```
